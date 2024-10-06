@@ -1,13 +1,17 @@
+package algorithmDes;
+
 import javax.crypto.Cipher;
 import javax.crypto.KeyGenerator;
 import javax.crypto.SecretKey;
 import java.util.Base64;
+import java.util.Scanner;
 
-public class Main {
+public class AlgorithmDes {
 
     public static void main(String[] args) throws Exception {
-        // Исходное сообщение для шифрования
-        String message = "Hello, DES!";
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Введите сообщение: ");
+        String message = scanner.nextLine();
         System.out.println("Начальное сообщение: " + message);
 
         // Генерация ключа DES
